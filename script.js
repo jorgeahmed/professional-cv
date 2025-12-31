@@ -3,9 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const featuredRepos = [
-    'seismic-iot-alert-system',
-    'banking-infra-compliance',
-    'construction-cost-estimator'
+    'fixfast-pitch-deck',
+    'qoutebot',
+    'fashion-mnist-project',
+    'MQTT-Google-Sheet-y-GlideApp',
+    'manual-sgi',
+    'visualizador-de-ordenamiento'
 ];
 
 async function fetchRepos() {
@@ -16,7 +19,7 @@ async function fetchRepos() {
         const response = await fetch(`https://api.github.com/users/${username}/repos`);
         const repos = await response.json();
 
-        // Filter only the strategic repositories
+        // Filter only the featured repositories
         const strategicRepos = repos.filter(repo => featuredRepos.includes(repo.name));
 
         container.innerHTML = ''; // Clear loading state
@@ -32,11 +35,14 @@ async function fetchRepos() {
             card.target = "_blank";
             card.className = 'repo-card';
 
-            // Map repo name to business context (hardcoded for cleaner display)
-            let businessContext = "";
-            if (repo.name.includes('seismic')) businessContext = "SeismicAI / BBVA Integration";
-            if (repo.name.includes('banking')) businessContext = "Santander / Banxico Audit";
-            if (repo.name.includes('construction')) businessContext = "Sinai / Pretencreto ROI";
+            // Map repo name to business context
+            let businessContext = "Technical Project";
+            if (repo.name.includes('fixfast')) businessContext = "Startup Pitch / Business Strategy";
+            if (repo.name.includes('qoutebot') || repo.name.includes('quote')) businessContext = "SaaS / Construction Tech";
+            if (repo.name.includes('fashion') || repo.name.includes('mnist')) businessContext = "AI / Computer Vision";
+            if (repo.name.includes('MQTT') || repo.name.includes('Glide')) businessContext = "IoT / Automation";
+            if (repo.name.includes('manual-sgi')) businessContext = "Process Documentation";
+            if (repo.name.includes('visualizador')) businessContext = "Algorithms Visualization";
 
             card.innerHTML = `
                 <div class="repo-header">
