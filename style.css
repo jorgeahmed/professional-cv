@@ -435,7 +435,27 @@ footer {
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    margin: 5rem 0;
+    margin: 3rem 0;
+    /* Reduced margin */
+    padding: 6rem 1rem;
+    /* Increased padding */
+    width: 100vw;
+    /* Force full viewport width */
+    margin-left: -50vw;
+    /* Reset margin for full width breakout */
+    left: 50%;
+    /* Center breakout */
+    box-sizing: border-box;
+}
+
+.sinai-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center flex children */
+    justify-content: center;
 }
 
 .badge-sinai {

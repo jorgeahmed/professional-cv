@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantenimiento Sinai | Servicios Industriales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* Specific overrides for Sinai Brand */
+        :root {
+            --sinai-teal: #3AB4B4;
+            --sinai-dark: #1F4558;
+            --sinai-blue: #2B7FA5;
+        }
+
+        body {
+            background: #F5F5F0;
+            color: #1f2937;
+        }
+
+        header {
+            background: var(--sinai-dark);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--sinai-dark);
+        }
+
+        .hero-sinai {
+            text-align: center;
+            padding: 8rem 2rem;
+            background: var(--sinai-dark);
+            color: white;
+        }
+
+        .hero-sinai h1 {
+            color: white;
+            font-size: 3.5rem;
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .card-service {
+            background: var(--sinai-teal);
+            /* Teal from image */
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card-service:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-service h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .card-service ul {
+            text-align: left;
+            padding-left: 1.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-top: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Products Timeline Style */
+        .products-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .product-item {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .icon-box {
+            background: #bfdbfe;
+            padding: 1.5rem;
+            border-radius: 50%;
+            font-size: 2rem;
+            color: var(--sinai-blue);
+        }
+
+        /* Projects List */
+        .project-list {
+            background: var(--sinai-dark);
+            color: white;
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-list h3 {
+            color: #86efac;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 0.5rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .p-tag {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 2rem;
+            color: white;
+            text-decoration: none;
+            border: 1px solid white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+        }
+
+        .btn-back:hover {
+            background: white;
+            color: var(--sinai-dark);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero-sinai">
+        <span
+            style="background: #F59E0B; padding: 0.5rem 1rem; border-radius: 5px; color: black; font-weight: bold; text-transform: uppercase;">División
+            Industrial</span>
+        <h1>Mantenimiento Sinai</h1>
+        <p style="font-size: 1.2rem; max-width: 600px; margin: 1rem auto; opacity: 0.9;">Soluciones Integrales en
+            Ingeniería Civil, IoT y Telecomunicaciones.</p>
+        <a href="index.html" class="btn-back">← Volver al CV Principal</a>
+    </header>
+
+    <main>
+        <!-- Servicios Section -->
+        <h2 class="section-title">Servicios</h2>
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <img src="assets/services.jpg" alt="Diagrama de Servicios Sinai"
+                style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        </div>
+        <div class="grid-cards">
+            <!-- 1. Instalaciones Especiales -->
+            <div class="card-service">
+                <div
+                    style="background: #1F4558; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">
+                    1</div>
+                <h3>Instalaciones Especiales</h3>
+                <ul>
+                    <li>Telecomunicaciones</li>
+                    <li>Industria 4.0</li>
+                    <li>Protección contra incendios</li>
+                    <li>Instalaciones eléctricas</li>
+                </ul>
+            </div>
+
+            <!-- 2. Mantenimiento -->
+            <div class="card-service" style="background: #2B7FA5;">
+                <div
+                    style="background: #1F4558; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">
+                    2</div>
+                <h3>Mantenimiento</h3>
+                <ul>
+                    <li>Preventivo</li>
+                    <li>Predictivo</li>
+                    <li>Correctivo</li>
+                </ul>
+            </div>
+
+            <!-- 3. Obra Civil -->
+            <div class="card-service" style="background: #2B7FA5;">
+                <div
+                    style="background: #1F4558; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">
+                    3</div>
+                <h3>Obra Civil</h3>
+                <ul>
+                    <li>Ejecución</li>
+                    <li>Control y seguimiento</li>
+                    <li>Cierre de proyecto</li>
+                </ul>
+            </div>
+
+            <!-- 4. Gestión de Proyectos -->
+            <div class="card-service">
+                <div
+                    style="background: #1F4558; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">
+                    4</div>
+                <h3>Gestión de Proyectos</h3>
+                <ul>
+                    <li>Planificación</li>
+                    <li>Ejecución</li>
+                    <li>Control y seguimiento</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Productos Section -->
+        <h2 class="section-title">Productos</h2>
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <img src="assets/products.jpg" alt="Catálogo de Productos Sinai"
+                style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        </div>
+        <div class="products-container">
+            <div class="product-item">
+                <div class="icon-box"><i class="fas fa-lightbulb"></i></div>
+                <div>
+                    <h3>Iluminación</h3>
+                    <p>Sistemas de iluminación, fotoceldas, bancos de baterías.</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="icon-box"><i class="fas fa-tools"></i></div>
+                <div>
+                    <h3>Herramientas</h3>
+                    <p>Venta y renta de herramientas especializadas.</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="icon-box"><i class="fas fa-truck-loading"></i></div>
+                <div>
+                    <h3>Concretos</h3>
+                    <p>Concretos especiales, fibra para concreto, estudios geotécnicos.</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+                <div>
+                    <h3>Aplicaciones Industry 4.0</h3>
+                    <p>Apps No-code operativas, sistemas industriales, automatizaciones (hardware).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proyectos Section -->
+        <h2 class="section-title" style="margin-bottom: 2rem;">Portafolio de Proyectos</h2>
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <img src="assets/projects.jpg" alt="Lista de Proyectos Realizados"
+                style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        </div>
+        <div class="grid-cards" style="grid-template-columns: 1fr;">
+
+            <div class="project-list">
+                <h3>🏗️ Obra Civil</h3>
+                <div class="project-tags">
+                    <span class="p-tag">Bodega Delter</span>
+                    <span class="p-tag">Lacto Productos La Loma</span>
+                    <span class="p-tag">Cambio de Loseta</span>
+                    <span class="p-tag">Tablaroca Cubículos</span>
+                    <span class="p-tag">Pisos Delegación</span>
+                    <span class="p-tag">Construcción de Casas</span>
+                </div>
+            </div>
+
+            <div class="project-list">
+                <h3>🔌 Instalaciones</h3>
+                <div class="project-tags">
+                    <span class="p-tag">Aislamiento Térmico</span>
+                    <span class="p-tag">Fibra Óptica ATC</span>
+                    <span class="p-tag">Reacomodo de Site</span>
+                    <span class="p-tag">Cableados Gates</span>
+                </div>
+            </div>
+
+            <div class="project-list">
+                <h3>🏭 Taller de Operaciones</h3>
+                <div class="project-tags">
+                    <span class="p-tag">Taller Electromecánico</span>
+                    <span class="p-tag">Fabricación de Maquinaria</span>
+                    <span class="p-tag">Serigrafía</span>
+                    <span class="p-tag">Ensamblado</span>
+                </div>
+            </div>
+
+            <div class="project-list">
+                <h3>🛠️ Mantenimiento</h3>
+                <div class="project-tags">
+                    <span class="p-tag">Mantenimiento Coca-Cola</span>
+                    <span class="p-tag">Mantenimiento Portón</span>
+                    <span class="p-tag">Mantenimiento CERESO</span>
+                    <span class="p-tag">Parques</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Clientes Section -->
+        <h2 class="section-title">Nuestros Clientes</h2>
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <img src="assets/clients.jpg" alt="Logos de Clientes: Santander, CocaCola, Gobierno de Canada"
+                style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        </div>
+
+    </main>
+
+    <footer style="background: #111; color: white; text-align: center; padding: 2rem;">
+        <p>&copy; 2025 Mantenimiento Sinai. Dirigido por Jorge G. Lopez Laveaga.</p>
+    </footer>
+
+</body>
+
+</html>
