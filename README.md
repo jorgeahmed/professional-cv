@@ -13,7 +13,7 @@ Here is how I have made an impact across four key industries:
 ### 🏭 Industrial Maintenance & Construction
 **Current Role: Director / CEO of Mantenimiento Sinai**
 I am currently transforming traditional industrial services into tech-enabled operations.
-*   **My Impact:** I scaled revenue to over **$2.5M USD** by modernizing how we deliver warehouse renovations and civil engineering projects for clients like **Coca-Cola** and **Lactoproductos La Loma**.
+*   **My Impact:** I scaled revenue to over **$2.5M MXN** by modernizing how we deliver warehouse renovations and civil engineering projects for clients like **Coca-Cola** and **Lactoproductos La Loma**.
 *   **My Approach:** I introduced IoT automation to monitor facility health, moving from reactive repairs to predictive maintenance.
 
 ### 🏦 FinTech & Banking Infrastructure
