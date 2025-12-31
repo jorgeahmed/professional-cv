@@ -9,7 +9,7 @@ I am a **Builder** at heart. Whether it's laying 1,000km of fiber optic cable fo
 
 ### **Mantenimiento Sinai** | Director / CEO
 *2023 - Present*
-*   **Revenue Growth:** Scaling industrial services revenue to **$2.5M+ USD**.
+*   **Revenue Growth:** Scaling industrial services revenue to **$2.5M+ MXN**.
 *   **Innovation:** Leading warehouse renovation and IoT automation projects for high-profile clients.
 *   **Tech Integration:** Merging traditional civil engineering with modern IoT solutions to optimize industrial facilities.
 
