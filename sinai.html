@@ -330,6 +330,65 @@
         <p>&copy; 2025 Mantenimiento Sinai. Dirigido por Jorge G. Lopez Laveaga.</p>
     </footer>
 
+    <script>
+        const albums = [
+            { title: "Taller Sinai-Assic", url: "https://photos.app.goo.gl/b3kuCap8L9oW7uHd6" },
+            { title: "Mantenimiento Coca Cola", url: "https://photos.app.goo.gl/ux4wF1TNKbRswM367" },
+            { title: "Patio de maniobras. La loma", url: "https://photos.app.goo.gl/2am68i3VgVHPSqMp8" },
+            { title: "Cubículo Compras", url: "https://photos.app.goo.gl/SeEcBoN9hKGx9yfbA" },
+            { title: "REPARACION TANQUE DE ACEITE LA LOMA", url: "https://photos.app.goo.gl/tNhiNJiJqDzavQoA6" },
+            { title: "Tanque de Aceite", url: "https://photos.app.goo.gl/J3VDZBrQCAwiTm8y7" },
+            { title: "LA LOMA ARNES", url: "https://photos.app.goo.gl/nskkvfyDHipAd1mE9" },
+            { title: "LA LOMA LINEA 1 DE PRODUCCION", url: "https://photos.app.goo.gl/ybgbR4VKGdST2dNf7" },
+            { title: "Tapas Marinas", url: "https://photos.app.goo.gl/CyBQ7PXQ8YqbXMLV7" },
+            { title: "La Loma. Línea de producción 2", url: "https://photos.app.goo.gl/NcxnZgGGaNLvRc338" },
+            { title: "La Loma lavado de cubetas", url: "https://photos.app.goo.gl/BFhmkjHgKdQnkBYF8" },
+            { title: "La loma, aislamiento térmico de tuberías", url: "https://photos.app.goo.gl/uKdok8oukp8XRC7X9" },
+            { title: "Taller Electromecanico", url: "https://photos.app.goo.gl/jAJNuqJNh6tppvpS8" },
+            { title: "La loma oficinas de autitoria - costos", url: "https://photos.app.goo.gl/yNehoHL1RrsgtUnN9" },
+            { title: "Loseta la Loma", url: "https://photos.app.goo.gl/JnRmFqZioYaVdGLd9" },
+            { title: "Maquinaria fabricada", url: "https://photos.app.goo.gl/oCkRdHbpVAB6C643A" },
+            { title: "Instalación de liofilizado", url: "https://photos.app.goo.gl/xvuq1ZZPPwHaA4SK8" },
+            { title: "Estructura Metálica, Losacero, Laminado", url: "https://photos.app.goo.gl/VU2X197ZbokQfQwt9" },
+            { title: "Mantenimiento edificio privado GAM", url: "https://photos.app.goo.gl/ZoMJXfwwHonHskYA8" },
+            { title: "Mantenimiento porton, La loma", url: "https://photos.app.goo.gl/CySC2hDibvcUT4p97" },
+            { title: "Proyecto Clableado, Gates Atlacomulco", url: "https://photos.app.goo.gl/qbetw2NUEq8J9eLa6" },
+            { title: "Construcción de casas Xochimilco", url: "https://photos.app.goo.gl/81m8vqjgDcvqpQ429" },
+            { title: "Banquetas y guarniciones, delegación Alvaro Obregon", url: "https://photos.app.goo.gl/y1bND3qmXnRTJYeg8" },
+            { title: "Instalación Fibra Óptica (ATC)", url: "https://photos.app.goo.gl/H9HRxvV7GGhBTwrT8" },
+            { title: "Proyecto construcción de cocineta Fovissste", url: "https://photos.app.goo.gl/mZbBt3BRqWbbpXWt6" },
+            { title: "Proyecto Grupo Dragon, Reacomodo de cableado", url: "https://photos.app.goo.gl/wnQsW5BpZ7ZP4EuC9" },
+            { title: "Remodelación de plafones Cerezo Jalisco", url: "https://photos.app.goo.gl/Hds7NJkDF7n2ghFe7" },
+            { title: "Remodelaciones Casa Habitación", url: "https://photos.app.goo.gl/773uSbpzPehVeJBL6" },
+            { title: "Mantenimiento de pisos Del. Azcapotzalco", url: "https://photos.app.goo.gl/FD7fjWP2xnaahB5a9" },
+            { title: "Remodelacion Sucursal SELECT Santander", url: "https://photos.app.goo.gl/xEoxqjJRbBpcm3U56" },
+            { title: "Remodelacion parque Azcapotzalco", url: "https://goo.gl/photos/aY7rKMAx3LPiZ24n9" },
+            { title: "Obra civil prefabricada, Bodega Licon", url: "https://photos.app.goo.gl/NTQXWFcoRr3yFU5X7" },
+            { title: "Proyectos Reacomodo Site, MDF, IDF, Santander", url: "https://photos.app.goo.gl/R6xZgHs3ou56xS86A" }
+        ];
+
+        const carousel = document.getElementById('album-carousel');
+        const icons = ['fa-images', 'fa-tools', 'fa-hard-hat', 'fa-industry', 'fa-building'];
+
+        albums.forEach((album, index) => {
+            const card = document.createElement('div');
+            card.className = 'album-card';
+
+            const randomIcon = icons[index % icons.length];
+
+            card.innerHTML = `
+                <div class="album-thumb">
+                    <i class="fas ${randomIcon}"></i>
+                </div>
+                <div class="album-info">
+                    <div class="album-title">${album.title.replace(' - Google Photos', '').replace('Shared album · Tap to view!', '')}</div>
+                    <a href="${album.url}" target="_blank" class="btn-album">Ver Álbum <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            `;
+            carousel.appendChild(card);
+        });
+    </script>
+
 </body>
 
 </html>
